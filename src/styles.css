@@ -100,11 +100,13 @@ ul.side-nav {
 }
 
 .main {
-    background-color: yellowgreen;
+    /*300 slate*/
+    background-color: #cbd5e1;
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    /* grid-template-rows: 1fr 1fr; */
-    grid-template-rows: repeat(auto-fit, minmax(220px, 1fr));
+    /* grid-template-columns: 3fr 1fr; */
+    grid-template-columns: 8fr 3fr;
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    /* grid-template-rows: auto; */
     padding: 1rem;
     gap: 1.25rem;
 }
@@ -112,7 +114,6 @@ ul.side-nav {
 .section-label {
     font-weight: 600;
     font-size: 18px;
-    color: #1f1f1f;
     letter-spacing: 1px;
     padding: .5rem .25rem;
 }
@@ -124,7 +125,7 @@ ul.side-nav {
 .cards-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 1.25rem;
 }
 
 .card {
@@ -132,21 +133,21 @@ ul.side-nav {
     height: 160px;
     border-radius: 8px;
     display: grid;
-    padding: 12px 26px;
+    padding: 16px 28px;
     gap: 2px;
     grid-template-rows: 1fr 3fr 1fr;
 }
 
 .card-title {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     align-self: end;
+    color: #1f1f1f;
 }
 
 .card-text {
     font-size: 14px;
-    color: #5f5f5f;
-    width: fit-content;
+    color: #6f6f6f;
 }
 
 .card-buttons {
@@ -163,17 +164,44 @@ ul.side-nav {
 
 .news-box,
 .trending-box {
+    box-sizing: border-box;
     display: grid;
     background-color: #fff;
-    min-height: 200px;
-    height: calc(100% - 2rem);
+    height: clamp(100px, calc(100% - 2rem), 90%);
     border-radius: 8px;
 }
 
+.news-box {
+    align-content: center;
+    gap: 0.25rem;
+    padding: 0 1.5rem;
+}
+
+.sub-card {
+    padding: 0.125rem 0.5rem;
+}
+
+.news-box hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #cfcfcf;
+}
+
+.sub-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: #1f1f1f;
+}
+
+.sub-text {
+    font-size: 10px;
+    color: #6f6f6f;
+}
+
 .trending-box {
-    height: calc(100% - 2.5rem);
+    /* height: calc(100% - 2.75rem); */
 }
 
 #trending-label {
-    padding-top: .75rem;
+    /* padding-top: .75rem; */
 }
