@@ -155,7 +155,7 @@ ul.side-nav {
     display: grid;
     grid-auto-flow: column;
     justify-content: end;
-    gap: 1.25rem;
+    gap: 1.5rem;
     align-items: start;
 }
 
