@@ -10,7 +10,7 @@ body {
 }
 
 .sidebar {
-    background-color: #0284c7;
+    background-color: #0592d8;
     color: #fff;
     font-weight: 600;
     grid-row: span 2;
@@ -37,7 +37,7 @@ body {
 
 .sidebar-svg {
     justify-self: center;
-    width: 1em;
+    width: 1.125em;
 }
 
 .sidebar-svg-title {
@@ -103,10 +103,8 @@ ul.side-nav {
     /*300 slate*/
     background-color: #cbd5e1;
     display: grid;
-    /* grid-template-columns: 3fr 1fr; */
-    grid-template-columns: 8fr 3fr;
+    grid-template-columns: 7fr 3fr;
     grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
-    /* grid-template-rows: auto; */
     padding: 1rem;
     gap: 1.25rem;
 }
@@ -125,18 +123,28 @@ ul.side-nav {
 .cards-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.25rem;
+    gap: 2rem;
 }
 
 .card {
     background-color: #fff;
+    /* border-left: 8px solid rgba(240, 46, 170, 0.9); */
+    border-left: 8px solid rgba(14, 165, 233, 0.9);
     height: 160px;
-    border-radius: 8px;
+    border-radius: 10px;
     display: grid;
-    padding: 16px 28px;
+    padding: 16px 24px;
     gap: 2px;
     grid-template-rows: 1fr 3fr 1fr;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* normal shadow */
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    /* highlighted layers colored */
+    /* neon pink */
+    /* box-shadow: rgba(240, 46, 170, 0.4) -3px 4px, rgba(240, 46, 170, 0.3) -6px 8px, rgba(240, 46, 170, 0.2) -9px 12px, rgba(240, 46, 170, 0.1) -12px 16px, rgba(240, 46, 170, 0.05) -15px 20px; */
+    /* light-blues */
+    /* box-shadow: rgba(5, 146, 216, 0.4) -3px 4px, rgba(5, 146, 216, 0.3) -6px 8px, rgba(5, 146, 216, 0.2) -9px 12px, rgba(5, 146, 216, 0.1) -12px 16px, rgba(5, 146, 216, 0.05) -15px 20px; */
+    box-shadow: rgba(14, 165, 233, 0.4) -3px 4px, rgba(14, 165, 233, 0.3) -6px 8px, rgba(14, 165, 233, 0.2) -9px 12px, rgba(14, 165, 233, 0.1) -12px 16px, rgba(14, 165, 233, 0.05) -15px 20px;
+
 }
 
 .card-title {
