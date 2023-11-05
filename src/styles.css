@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Roboto, 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .container {
@@ -136,6 +136,7 @@ ul.side-nav {
     padding: 16px 28px;
     gap: 2px;
     grid-template-rows: 1fr 3fr 1fr;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .card-title {
@@ -162,46 +163,87 @@ ul.side-nav {
     width: 26px;
 }
 
+.main-right {
+    display: grid;
+    gap: 1.5rem;
+}
+
 .news-box,
 .trending-box {
-    box-sizing: border-box;
     display: grid;
     background-color: #fff;
-    height: clamp(100px, calc(100% - 2rem), 90%);
     border-radius: 8px;
+    padding: 1.5rem;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
 }
 
 .news-box {
     align-content: center;
-    gap: 0.25rem;
-    padding: 0 1.5rem;
+    /* gap: max(0.35rem, 0.35vw); */
+    gap: 0.35rem;
 }
 
 .sub-card {
     padding: 0.125rem 0.5rem;
 }
 
-.news-box hr {
+hr {
     width: 100%;
     border: none;
     border-top: 1px solid #cfcfcf;
 }
 
-.sub-title {
+.sub-title,
+.user-name {
     font-size: 12px;
     font-weight: 600;
     color: #1f1f1f;
 }
 
-.sub-text {
+.sub-text,
+.user-text {
     font-size: 10px;
     color: #6f6f6f;
 }
 
 .trending-box {
-    /* height: calc(100% - 2.75rem); */
+    max-height: calc(100% - 2.5rem);
+    /* grid-template: repeat(auto-fit, minmax(2rem 1fr)), 1fr 4fr; */
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: repeat(4, 1fr 1px) 1fr;
+    /* grid-template-rows: repeat(auto-fit, minmax(1rem, 1fr)); */
+    gap: .5rem;
+    align-items: center;
 }
 
-#trending-label {
-    /* padding-top: .75rem; */
+.trending-box hr {
+    grid-column: 2 span;
+    width: 5%;
+}
+
+.user-card {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 1rem;
+    grid-column: 2 span;
+    align-content: center;
+}
+
+.user-card>img {
+    width: 2.5rem;
+}
+
+.user-info {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.user-name {
+    font-weight: 500;
+}
+
+.user-text {
+    font-size: 12px;
 }
