@@ -6,7 +6,7 @@ body {
 .container {
     min-height: 100vh;
     display: grid;
-    grid-template: 1fr 4fr / 2fr 7fr;
+    grid-template: 2fr 9fr / 2fr 7fr;
 }
 
 .sidebar {
@@ -20,7 +20,7 @@ body {
 }
 
 .sidebar-title {
-    font-size: 26px;
+    font-size: 1.625rem;
     font-weight: 700;
     align-content: start;
     padding-top: 0.5rem;
@@ -59,27 +59,29 @@ ul.side-nav {
 .side-nav>li>a {
     text-decoration: none;
     color: #fff;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .header {
-    background-color: lightslategray;
     display: grid;
-    grid-template: 1fr 1fr / 5fr 3fr;
-    padding: 0 1.5em;
+    grid-template: 3fr 5fr / 5fr 3fr;
+    padding: 1em 2em;
+    padding-right: 4em;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 10px;
+    font-size: 1.125em;
 }
 
 
 .search {
     display: grid;
-    align-content: center;
+    align-items: center;
     grid-template-columns: 2rem 1fr;
-    gap: .25em;
-    /* padding:1rem; */
+    gap: .375em;
+    /* padding-bottom: 1rem; */
 }
 
 .search img {
-    width: 1.5rem;
+    width: 1.375rem;
     cursor: pointer;
 }
 
@@ -92,7 +94,6 @@ ul.side-nav {
     background-color: rgba(184, 204, 227, 0.5);
     border: 0;
     border-radius: 24px;
-    width: 95%;
     padding: 4px 12px;
     font-size: 1rem;
 }
@@ -101,9 +102,9 @@ ul.side-nav {
     background-color: #fff;
     display: grid;
     grid-auto-flow: column;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.125em;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     gap: 1.5em;
 }
@@ -120,20 +121,32 @@ ul.side-nav {
     background-color: #fff;
     display: grid;
     grid-template: 1fr 1fr / 1fr 5fr;
+    font-weight: 700;
+    align-items: end;
 }
 
 .greetings img {
-    /* width: 5em; */
-    width: 4.5em;
-
+    width: 4em;
+    grid-row: 2 span;
+    justify-self: center;
 }
 
-.greetings>div:first-child {
-    grid-row: span 2;
+.greetings div.text:first-of-type {
+    font-size: 0.75em;
+}
+
+.greetings div.text:last-of-type {
+    align-self: center;
+    font-size: 1.375em;
 }
 
 .header-buttons {
-    background-color: bisque;
+    display: grid;
+    grid-auto-flow: column;
+    align-content: center;
+    justify-content: end;
+    margin-top: 2em;
+    gap: 1.75em;
 }
 
 .btn {
@@ -141,7 +154,7 @@ ul.side-nav {
     background-color: #0ea5e9;
     font-weight: 600;
     height: 34px;
-    width: 82px;
+    width: 88px;
     border: 1px solid #0ea5e9;
     border-radius: 16px;
     cursor: pointer;
@@ -152,13 +165,13 @@ ul.side-nav {
     display: grid;
     grid-template-columns: 7fr 3fr;
     grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
-    padding: 1rem;
-    gap: 1.25rem;
+    padding: 1.25rem;
+    gap: 1.5rem;
 }
 
 .section-label {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.125rem;
     padding: .5rem .25rem;
 }
 
@@ -195,13 +208,13 @@ ul.side-nav {
 
 .card-title {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.125em;
     align-self: end;
     color: #1f1f1f;
 }
 
 .card-text {
-    font-size: 14px;
+    font-size: 0.875em;
     color: #6f6f6f;
 }
 
@@ -251,14 +264,14 @@ hr {
 
 .sub-title,
 .user-name {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 600;
     color: #1f1f1f;
 }
 
 .sub-text,
 .user-text {
-    font-size: 10px;
+    font-size: 0.625rem;
     color: #6f6f6f;
 }
 
@@ -299,5 +312,5 @@ hr {
 }
 
 .user-text {
-    font-size: 12px;
+    font-size: 0.75rem;
 }
