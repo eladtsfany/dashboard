@@ -23,6 +23,7 @@ body {
     font-size: 26px;
     font-weight: 700;
     align-content: start;
+    padding-top: 0.5rem;
 }
 
 .sidebar-title,
@@ -65,20 +66,66 @@ ul.side-nav {
     background-color: lightslategray;
     display: grid;
     grid-template: 1fr 1fr / 5fr 3fr;
+    padding: 0 1.5em;
+}
+
+
+.search {
+    display: grid;
+    align-content: center;
+    grid-template-columns: 2rem 1fr;
+    gap: .25em;
+    /* padding:1rem; */
+}
+
+.search img {
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+.search-btn {
+    background-color: transparent;
+    border: 0;
 }
 
 .search-bar {
-    background-color: bisque;
+    background-color: rgba(184, 204, 227, 0.5);
+    border: 0;
+    border-radius: 24px;
+    width: 95%;
+    padding: 4px 12px;
+    font-size: 1rem;
 }
 
-.header-name {
+.header-user {
     background-color: #fff;
+    display: grid;
+    grid-auto-flow: column;
+    font-weight: 600;
+    font-size: 1.125em;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.header-user img:first-of-type {
+    width: 1.25em;
+}
+
+.header-user img:last-of-type {
+    width: 2.25em;
 }
 
 .greetings {
     background-color: #fff;
     display: grid;
     grid-template: 1fr 1fr / 1fr 5fr;
+}
+
+.greetings img {
+    /* width: 5em; */
+    width: 4.5em;
+
 }
 
 .greetings>div:first-child {
@@ -97,11 +144,11 @@ ul.side-nav {
     width: 82px;
     border: 1px solid #0ea5e9;
     border-radius: 16px;
+    cursor: pointer;
 }
 
 .main {
-    /*300 slate*/
-    background-color: #cbd5e1;
+    background-color: rgba(184, 204, 227, 0.5);
     display: grid;
     grid-template-columns: 7fr 3fr;
     grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
@@ -110,9 +157,8 @@ ul.side-nav {
 }
 
 .section-label {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
-    letter-spacing: 1px;
     padding: .5rem .25rem;
 }
 
@@ -131,7 +177,7 @@ ul.side-nav {
     /* border-left: 8px solid rgba(240, 46, 170, 0.9); */
     border-left: 8px solid rgba(14, 165, 233, 0.9);
     height: 160px;
-    border-radius: 10px;
+    border-radius: 4%;
     display: grid;
     padding: 16px 24px;
     gap: 2px;
@@ -141,7 +187,7 @@ ul.side-nav {
     /* highlighted layers colored */
     /* neon pink */
     /* box-shadow: rgba(240, 46, 170, 0.4) -3px 4px, rgba(240, 46, 170, 0.3) -6px 8px, rgba(240, 46, 170, 0.2) -9px 12px, rgba(240, 46, 170, 0.1) -12px 16px, rgba(240, 46, 170, 0.05) -15px 20px; */
-    /* light-blues */
+    /* light-blue */
     /* box-shadow: rgba(5, 146, 216, 0.4) -3px 4px, rgba(5, 146, 216, 0.3) -6px 8px, rgba(5, 146, 216, 0.2) -9px 12px, rgba(5, 146, 216, 0.1) -12px 16px, rgba(5, 146, 216, 0.05) -15px 20px; */
     box-shadow: rgba(14, 165, 233, 0.4) -3px 4px, rgba(14, 165, 233, 0.3) -6px 8px, rgba(14, 165, 233, 0.2) -9px 12px, rgba(14, 165, 233, 0.1) -12px 16px, rgba(14, 165, 233, 0.05) -15px 20px;
 
