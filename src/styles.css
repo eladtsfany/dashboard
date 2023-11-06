@@ -190,7 +190,7 @@ ul.side-nav {
     /* border-left: 8px solid rgba(240, 46, 170, 0.9); */
     border-left: 8px solid rgba(14, 165, 233, 0.9);
     height: 160px;
-    border-radius: 4%;
+    border-radius: 12px;
     display: grid;
     padding: 16px 24px;
     gap: 2px;
