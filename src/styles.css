@@ -63,7 +63,7 @@ ul.side-nav {
 
 .side-nav>li:hover {
     transform: scale(1.05);
-    transition: 0.05s ease-in-out;
+    transition: transform 0.05s ease-in-out;
 }
 
 .header {
@@ -116,6 +116,7 @@ ul.side-nav {
 
 .header-user img:first-of-type {
     width: 1.25em;
+    cursor: pointer;
 }
 
 .header-user img:last-of-type {
@@ -163,6 +164,13 @@ ul.side-nav {
     border: 1px solid #0ea5e9;
     border-radius: 16px;
     cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0b71ba;
+    transform: scaleX(1.2);
+    transform: scale3d(1.2, 1.1, 1);
+    transition: transform 1s ease;
 }
 
 .main {
@@ -213,7 +221,7 @@ ul.side-nav {
 
 .card:hover {
     transform: scale(1.05);
-    transition: 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 .card-title {
@@ -243,7 +251,7 @@ ul.side-nav {
 
 .card-buttons>*:hover {
     transform: scale(1.2);
-    transition: 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
 .main-right {
