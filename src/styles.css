@@ -213,7 +213,7 @@ ul.side-nav {
 
 .card:hover {
     transform: scale(1.05);
-    transition: 0.4s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .card-title {
